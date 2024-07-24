@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-text">
+            <h1>Do you wanna date with me?</h1>
+        </div>
+        <div class="gif-container">
+            <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnlpa3lpZnY1N2V1cDY5Mzd2eXR4djZ3ZWk4YTF6N3IwOXltbjhwaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ZCSPaG9pPpSJEBiOUF/giphy.webp" alt="cute animation">
+        </div>
+        <div class="button">
+            <button class="btn btn-secondary" id="yesButton" onclick="nextPage()">Yes</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+        </div>
+        <script>
+            function nextPage() {
+                window.location.href = "yes.html";
+            }
+
+            function moveButton() {
+                var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                document.getElementById('noButton').style.left = `${x}px`;
+                document.getElementById('noButton').style.top = `${y}px`;
+            }
+        </script>
+    </div>
+
+
+
+</body>
+</html>

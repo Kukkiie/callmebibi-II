@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+    <link rel="stylesheet" href="date.css">
+</head>
+<body>
+    <div class="date-title">
+        <h1>Please select the date below</h1>
+    </div>
+    <div class="date-container">
+<!-- //Fri, 26// -->
+        <div class="date" onclick="location1()">
+            <div class="date-left">
+                <div class="date-choice">
+                    <div class="day-title">Friday,</div>
+                    <div class="date-number">26</div> 
+                </div>
+            </div>
+
+            <div class="date-right">
+                <h2 class="time">10:00 PM</h2>
+                <p class="time-zone"><em>Bali time</em></p>
+            </div>
+            
+        </div>
+
+        <div class="date" onclick="location2()">
+            <div class="date-left">
+                <div class="date-choice">
+                    <div class="day-title">Friday,</div>
+                    <div class="date-number">26</div> 
+                </div>
+            </div>
+
+            <div class="date-right">
+                <h2 class="time">10:30 PM</h2>
+                <p class="time-zone"><em>Bali time</em></p>
+            </div>
+        </div>
+    
+<!-- //Sat, 27// -->
+        <div class="date" onclick="location3()">
+            <div class="date-left">
+                <div class="date-choice">
+                    <div class="day-title">Saturday,</div>
+                    <div class="date-number">27</div> 
+                </div>
+            </div>
+
+            <div class="date-right">
+                <h2 class="time">9:00 PM</h2>
+                <p class="time-zone"><em>Bali time</em></p>
+            </div>
+        </div>
+
+        <div class="date" onclick="location4()">
+            <div class="date-left">
+                <div class="date-choice">
+                    <div class="day-title">Saturday,</div>
+                    <div class="date-number">27</div> 
+                </div>
+            </div>
+
+            <div class="date-right">
+                <h2 class="time">9:30 PM</h2>
+                <p class="time-zone"><em>Bali time</em></p>
+            </div>
+        </div>
+    </div>
+
+<!-- //Next Button// -->
+    <!-- <div class="next-button">
+        <button id="next-btn" class="btn btn-secondary" onclick="nextPage()">Next</button>
+    </div> -->
+
+    <script>
+        function location1() {
+            window.location.href = "location1.html";
+        }
+        function location2(){
+            window.location.href = "location2.html";
+        }
+        function location3(){
+            window.location.href = "location3.html";
+        }
+        function location4(){
+            window.location.href = "location4.html";
+        }
+        
+    </script>
+
+
+</body>
+</html>
